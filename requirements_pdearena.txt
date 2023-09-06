@@ -1,0 +1,109 @@
+absl-py==1.4.0
+aiohttp==3.8.4
+aiosignal==1.3.1
+antlr4-python3-runtime==4.9.3
+appdirs==1.4.4
+asciitree==0.3.3
+async-timeout==4.0.2
+asynctest==0.13.0
+attrs==22.2.0
+brotlipy==0.7.0
+cachetools==5.3.0
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
+cffi @ file:///opt/concourse/worker/volumes/live/093393a7-be0b-4332-5349-471010dae068/volume/cffi_1636541934284/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.1.3
+cryptography @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_19cvzxmeb9/croot/cryptography_1677533085498/work
+cycler==0.11.0
+docker-pycreds==0.4.0
+docstring-parser==0.15
+entrypoints==0.4
+exceptiongroup==1.1.1
+fasteners==0.18
+fdtd==0.2.5
+flit_core @ file:///opt/conda/conda-bld/flit-core_1644941570762/work/source/flit_core
+fonttools==4.38.0
+frozenlist==1.3.3
+fsspec==2023.1.0
+gitdb==4.0.10
+GitPython==3.1.31
+google-auth==2.16.2
+google-auth-oauthlib==0.4.6
+grpcio==1.51.3
+h5py==3.8.0
+idna @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_00jf0h4zbt/croot/idna_1666125573348/work
+importlib-metadata==4.13.0
+importlib-resources==5.12.0
+iniconfig==2.0.0
+joblib==1.2.0
+jsonargparse==4.20.0
+juliapkg==0.1.10
+kiwisolver==1.4.4
+lightning-utilities==0.8.0
+Markdown==3.4.1
+markdown-it-py==2.2.0
+MarkupSafe==2.1.2
+matplotlib==3.5.3
+mdurl==0.1.2
+mkl-fft==1.3.1
+mkl-random @ file:///opt/concourse/worker/volumes/live/133f1d0b-8fd8-4fa0-679e-7214401cbd75/volume/mkl_random_1626186083386/work
+mkl-service==2.4.0
+multidict==6.0.4
+numcodecs==0.10.2
+numpy @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_10c245a1-1c81-453c-8b70-3e944787a8d9mo1xhesu/croots/recipe/numpy_and_numpy_base_1653915529188/work
+oauthlib==3.2.2
+omegaconf==2.3.0
+packaging==23.0
+pandas==1.1.5
+pathtools
+phiflow==2.1.0
+Pillow==9.4.0
+pluggy==1.0.0
+portalocker==2.7.0
+protobuf==3.20.3
+psutil==5.9.4
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments==2.14.0
+pyOpenSSL @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6dweji2whw/croot/pyopenssl_1677607689781/work
+pyparsing==3.0.9
+PySocks @ file:///opt/concourse/worker/volumes/live/ef943889-94fc-4539-798d-461c60b77804/volume/pysocks_1605305801690/work
+pytest==7.2.2
+pytest-explicit==1.0.1
+pytest-mock==3.10.0
+python-dateutil==2.8.2
+pytorch-lightning==1.9.4
+pytorch-wavelets
+pytz==2022.7.1
+PyWavelets==1.3.0
+PyYAML==6.0
+requests @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_516b78ce-034d-4395-b9b5-1d78c2847384qtnol99l/croots/recipe/requests_1657734628886/work
+requests-oauthlib==1.3.1
+rich==13.3.2
+rsa==4.9
+scipy==1.7.3
+semantic-version==2.10.0
+sentry-sdk==1.17.0
+setproctitle==1.3.2
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+smmap==5.0.0
+tensorboard==2.11.2
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tomli==2.0.1
+torch==1.13.1
+torchaudio==0.12.1
+torchdata==0.5.1
+torchmetrics==0.11.4
+torchvision==0.13.1
+tqdm==4.65.0
+typeshed-client==2.2.0
+typing_extensions @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4b7xacf029/croot/typing_extensions_1669923792404/work
+urllib3 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4cyi6_u2vj/croot/urllib3_1673575523861/work
+wandb==0.14.0
+Werkzeug==2.2.3
+xarray==0.20.2
+yarl==1.8.2
+zarr==2.12.0
+zipp==3.15.0

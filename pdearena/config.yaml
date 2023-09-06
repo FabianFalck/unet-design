@@ -1,0 +1,176 @@
+# pytorch_lightning==1.9.4
+seed_everything: 42
+trainer:
+  logger:
+    class_path: pytorch_lightning.loggers.WandbLogger
+    init_args:
+      name: null
+      save_dir: .
+      version: null
+      offline: false
+      dir: null
+      id: null
+      anonymous: null
+      project: <PROJECT-NAME>
+      log_model: false
+      experiment: null
+      prefix: ''
+      checkpoint_name: null
+      job_type: null
+      config: null
+      entity: <TEAM-NAME>
+      reinit: null
+      tags: null
+      group: null
+      notes: null
+      magic: null
+      config_exclude_keys: null
+      config_include_keys: null
+      mode: online
+      allow_val_change: null
+      resume: null
+      force: null
+      tensorboard: null
+      sync_tensorboard: null
+      monitor_gym: null
+      save_code: null
+      settings: null
+  enable_checkpointing: true
+  callbacks:
+  - class_path: pytorch_lightning.callbacks.Timer
+    init_args:
+      duration: null
+      interval: epoch
+      verbose: true
+  - class_path: pytorch_lightning.callbacks.RichModelSummary
+    init_args:
+      max_depth: -1
+  - class_path: pytorch_lightning.callbacks.LearningRateMonitor
+    init_args:
+      logging_interval: step
+      log_momentum: false
+  - class_path: pytorch_lightning.callbacks.TQDMProgressBar
+    init_args:
+      refresh_rate: 1
+      process_position: 0
+  - class_path: pytorch_lightning.callbacks.ModelCheckpoint
+    init_args:
+      dirpath: outputs/ckpts
+      filename: epoch_{epoch:03d}
+      monitor: valid/unrolled_loss_mean
+      verbose: false
+      save_last: true
+      save_top_k: 5
+      save_weights_only: false
+      mode: min
+      auto_insert_metric_name: false
+      every_n_train_steps: null
+      train_time_interval: null
+      every_n_epochs: null
+      save_on_train_epoch_end: null
+  default_root_dir: outputs
+  gradient_clip_val: null
+  gradient_clip_algorithm: null
+  num_nodes: 1
+  num_processes: null
+  devices: '1'
+  gpus: null
+  auto_select_gpus: null
+  tpu_cores: null
+  ipus: null
+  enable_progress_bar: true
+  overfit_batches: 0.0
+  track_grad_norm: -1
+  check_val_every_n_epoch: 1
+  fast_dev_run: false
+  accumulate_grad_batches: null
+  max_epochs: 1
+  min_epochs: 1
+  max_steps: -1
+  min_steps: null
+  max_time: null
+  limit_train_batches: null
+  limit_val_batches: null
+  limit_test_batches: null
+  limit_predict_batches: null
+  val_check_interval: null
+  log_every_n_steps: 1
+  accelerator: cpu
+  strategy: ddp
+  sync_batchnorm: false
+  precision: 32
+  enable_model_summary: true
+  num_sanity_val_steps: 0
+  resume_from_checkpoint: null
+  profiler: null
+  benchmark: null
+  deterministic: false
+  reload_dataloaders_every_n_epochs: 0
+  auto_lr_find: false
+  replace_sampler_ddp: true
+  detect_anomaly: false
+  auto_scale_batch_size: false
+  plugins: null
+  amp_backend: native
+  amp_level: null
+  move_metrics_to_cpu: false
+  multiple_trainloader_mode: max_size_cycle
+  inference_mode: true
+model:
+  name: Unetbase-64_G
+  max_num_steps: 5
+  activation: gelu
+  criterion: mse
+  lr: 0.0002
+  dwt_encoder: true
+  freeze_lower_res: false
+  num_epochs_list:
+  - 100000000
+  up_fct: interpolate_nearest
+  n_extra_resnet_layers: 0
+  multi_res_loss: false
+  hidden_channels: 4
+  no_skip_connection: false
+  no_down_up: false
+  dwt_mode: zero
+  dwt_wave: haar
+  model: null
+data:
+  task: NavierStokes2D
+  data_dir: /Volumes/WD 4TB 2023/Mutliresdiff/pdearena_data/NavierStokes2D_smoke
+  time_history: 4
+  time_future: 1
+  time_gap: 0
+  pde:
+    n_scalar_components: 1
+    n_vector_components: 1
+    trajlen: 14
+    n_spatial_dims: 2
+  batch_size: 8
+  pin_memory: true
+  num_workers: 0
+  train_limit_trajectories: -1
+  valid_limit_trajectories: -1
+  test_limit_trajectories: -1
+  usegrid: false
+optimizer:
+  class_path: torch.optim.AdamW
+  init_args:
+    lr: 0.0002
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    weight_decay: 1.0e-05
+    amsgrad: false
+    maximize: false
+    foreach: null
+    capturable: false
+lr_scheduler:
+  class_path: pdearena.lr_scheduler.LinearWarmupCosineAnnealingLR
+  init_args:
+    warmup_epochs: 5
+    max_epochs: 50
+    warmup_start_lr: 1.0e-08
+    eta_min: 1.0e-07
+    last_epoch: -1

@@ -1,0 +1,24 @@
+absl-py==0.11.0
+scipy==1.5.4
+tensorflow==2.4.0    # 2.5.0 on server
+tensorboardX==2.1
+torch==1.7.1  # 1.12.1 on server
+torchvision==0.8.2
+tqdm==4.55.1
+
+pyYAML
+wandb
+protobuf==3.20.0   # to resolve dependency
+PyWavelets
+
+
+
+
+--------- NEW THINGS: 
+
+
+matplotlib
+pip3 install torch==1.8.2 torchvision==0.9.2 torchaudio==0.8.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cu111
+wandb
+PyWavelets
+pytorch_wavelets --> through pip install .
