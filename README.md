@@ -14,7 +14,7 @@
 
 <img src="graphics/u-net.jpg"  width="350">
 
-This repository is the official implementation of [A Unified Framework for U-Net Design and Analysis](https://arxiv.org/abs/2305.19638).
+This repository is the official implementation of [A Unified Framework for U-Net Design and Analysis](https://arxiv.org/abs/2305.19638). 
 
 ## Overview
 
