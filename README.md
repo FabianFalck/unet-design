@@ -27,7 +27,7 @@ This repository contains four self-contained *sub-repositories* (in the folders 
 
 We refer to Appendix E in the paper for more details on the existing code and other assets we used and built on.
 
-## Setup
+## Setup 
 
 ### Installation
 
